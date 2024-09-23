@@ -8,3 +8,15 @@ body {
     margin: 0;
     padding: 0 0;
 }
+header {
+    background-color: #c4ffdc;
+}
+.sidebar {
+    background-color: #c36c6c;
+}
+main {
+    background-color: #dfc69f;
+}
+footer {
+    background-color: #bdbdf0;
+}
