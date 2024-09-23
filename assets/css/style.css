@@ -8,14 +8,28 @@ body {
     margin: 0;
     padding: 0 0;
 }
-header {
+main {
     background-color: #c4ffdc;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
 }
 .sidebar {
-    background-color: #c36c6c;
+    background-color: #000cf1;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
 }
-main {
-    background-color: #dfc69f;
+.container {
+    background-color: #fa0011;
+    width: 80%;
+    height: 100vh;
+}
+header {
+    background-color: rgb(223, 139, 189);
+}
+.content {
+    background-color: #fafeb5;
 }
 footer {
     background-color: #bdbdf0;
