@@ -1,48 +1,63 @@
-<!--
-* Index file is the first file that will appear to show RealDash Dashboard.
--->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RealDash Dashboard</title>
+    <title>پنل مدیریت مشاور املاک</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <main>
-        <section class="sidebar">
-            <div class="logo">logo</div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <footer>
-                <p>&copy; 2023 RealDash Dashboard</p>
-            </footer>
+    <div class="sidebar">
+        <h2>مدیریت مشاور املاک</h2>
+        <ul>
+            <li><a href="#dashboard"><i class="fas fa-tachometer-alt"></i> داشبورد</a></li>
+            <li><a href="#properties"><i class="fas fa-building"></i> مدیریت ملک‌ها</a></li>
+            <li><a href="#clients"><i class="fas fa-users"></i> مدیریت مشتریان</a></li>
+            <li><a href="#visits"><i class="fas fa-calendar-check"></i> مدیریت بازدیدها</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <header>
+            <div class="user-menu">
+                <i class="fas fa-user"></i> کاربر
+                <div class="user-dropdown">
+                    <a href="#settings">تنظیمات</a>
+                    <a href="#logout">خروج</a>
+                </div>
+            </div>
+            <h1>داشبورد</h1>
+        </header>
+        <section id="dashboard">
+            <h2>خلاصه وضعیت</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>ملک‌ها</h3>
+                    <p>تعداد کل: 50</p>
+                </div>
+                <div class="card">
+                    <h3>مشتریان</h3>
+                    <p>تعداد کل: 120</p>
+                </div>
+                <div class="card">
+                    <h3>بازدیدها</h3>
+                    <p>تعداد کل: 30</p>
+                </div>
+            </div>
         </section>
-        <section class="container">
-            <header>
-                <nav class="user-menu">
-                    <ul>
-                        <li><a href="#">User Profile</a>
-                            <ul>
-                                <li><a href="#">Settings</a></li>
-                                <li><a href="#">Logout</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <section class="content">
-
-            </section>
+        <section id="properties">
+            <h2>مدیریت ملک‌ها</h2>
+            <!-- محتوای مدیریت ملک‌ها -->
         </section>
-    </main>
+        <section id="clients">
+            <h2>مدیریت مشتریان</h2>
+            <!-- محتوای مدیریت مشتریان -->
+        </section>
+        <section id="visits">
+            <h2>مدیریت بازدیدها</h2>
+            <!-- محتوای مدیریت بازدیدها -->
+        </section>
+    </div>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>

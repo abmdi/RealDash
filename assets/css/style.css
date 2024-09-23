@@ -1,36 +1,163 @@
-/*  Style.css
-    Contains all CSS stuff
-    Project: RealDash
-    Version: 1.1
-    Author: Abbas Moradi
-*/
 body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    direction: rtl;
 }
-main {
-    background-color: #c4ffdc;
-    width: 100%;
-    height: 100vh;
-    margin: 0px;
-}
+
 .sidebar {
-    background-color: #000cf1;
-    width: 20%;
-    height: 100vh;
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
     position: fixed;
+    height: 100%;
+    transition: width 0.3s;
 }
-.container {
-    background-color: #fa0011;
-    width: 80%;
-    height: 100vh;
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 2rem;
 }
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 1rem 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a i {
+    margin-left: 1rem;
+}
+
+.main-content {
+    margin-right: 250px;
+    padding: 2rem;
+    width: 100%;
+    transition: margin-right 0.3s;
+}
+
 header {
-    background-color: rgb(223, 139, 189);
+    background-color: #444;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
 }
-.content {
-    background-color: #fafeb5;
+
+.user-menu {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    cursor: pointer;
 }
-footer {
-    background-color: #bdbdf0;
+
+.user-menu i {
+    margin-left: 0.5rem;
+}
+
+.user-dropdown {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.user-dropdown a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.user-dropdown a:hover {
+    background-color: #f4f4f4;
+}
+
+.user-menu:hover .user-dropdown {
+    display: block;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100px;
+    }
+
+    .sidebar ul li a {
+        justify-content: center;
+    }
+
+    .sidebar ul li a span {
+        display: none;
+    }
+
+    .main-content {
+        margin-right: 100px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 60px;
+    }
+
+    .main-content {
+        margin-right: 60px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
 }
